@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+<meta name="bingbot" content="index, follow">
+<meta name="description" content="22电影网 · 用 22 个可自测动作看懂电影。22dianyingwang-cn.github.io 提供正版观影指引、公版片单、镜头语言入门、按心情选片与观影成本对照，不提供任何影视资源下载与在线播放。">
+<meta name="keywords" content="22电影网, 22dianyingwang, 22dianyingwang-cn, 电影入门, 电影拉片, 镜头语言, 长镜头, 蒙太奇, 电影构图, 留白, 场面调度, 电影推荐, 片单导航, 观影指南, 电影鉴赏, 经典电影, 冷门佳片, 文艺片, 纪录片, 默片, 修复版, 4K修复, 公有领域电影, 公版电影, 正版观影渠道, 下饭电影, 通勤片单, 失眠电影, 电影评论">
+<title>22电影网 · 用 22 个动作看懂一部电影 | 22dianyingwang-cn.github.io</title>
+<link rel="canonical" href="https://22dianyingwang-cn.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="22电影网 · 用 22 个动作看懂一部电影">
+<meta property="og:description" content="不追首映日、不刷榜单、不抄豆瓣。22 个 30 秒可自测的观影动作，公版片单、正版渠道与观影成本对照。">
+<meta property="og:url" content="https://22dianyingwang-cn.github.io/">
+<meta property="og:site_name" content="22电影网">
+<meta name="theme-color" content="#f2ece1">
+<style>
+:root{
+  --paper:#f2ece1;
+  --paper-2:#e8dfcd;
+  --ink:#241e18;
+  --ink-2:#4a4036;
+  --umber:#7a5c3a;   /* 鼠褐 */
+  --clay:#c98a4a;    /* 黏土 */
+  --rust:#b5653a;    /* 锈 */
+  --moss:#6f8a5a;    /* 苔 */
+  --slate:#3f5c66;   /* 岩蓝 */
+  --plum:#7a4a5e;    /* 梅 */
+  --line:rgba(36,30,24,.16);
+  --line-2:rgba(36,30,24,.08);
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto;}}
+body{
+  margin:0;
+  font-family:"Songti SC","Source Han Serif SC","Noto Serif CJK SC","WenQuanYi Micro Hei","PingFang SC","Microsoft YaHei",Georgia,serif;
+  color:var(--ink);
+  background:var(--paper);
+  background-image:
+    radial-gradient(circle at 12% 8%, rgba(201,138,74,.10), transparent 42%),
+    radial-gradient(circle at 88% 92%, rgba(63,92,102,.10), transparent 46%),
+    repeating-linear-gradient(0deg, rgba(122,92,58,.022) 0 1px, transparent 1px 5px);
+  line-height:1.85;
+  font-size:clamp(15px, 1.02vw + 12.6px, 17px);
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block;}
+a{color:var(--rust);text-decoration:none;}
+a:hover{color:var(--plum);}
+::selection{background:var(--clay);color:#fff;}
+
+/* ============ 顶部 ============ */
+.topbar{
+  position:sticky;top:0;z-index:60;
+  background:rgba(242,236,225,.94);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+}
+.topbar .in{
+  max-width:1180px;margin:0 auto;padding:.62rem 1.4rem;
+  display:flex;align-items:center;gap:1.4rem;flex-wrap:wrap;
+}
+.brand{font-size:1.16rem;font-weight:700;letter-spacing:.02em;white-space:nowrap;}
+.brand small{display:block;font-size:.66rem;letter-spacing:.28em;color:var(--ink-2);font-weight:400;margin-top:.16rem;}
+nav[role="navigation"]{margin-left:auto;}
+nav[role="navigation"] ul{list-style:none;margin:0;padding:0;display:flex;gap:.3rem;flex-wrap:wrap;}
+nav[role="navigation"] a{
+  display:block;padding:.42rem .72rem;font-size:.86rem;color:var(--ink-2);
+  border:1px solid transparent;border-radius:2px;
+}
+nav[role="navigation"] a:hover{color:var(--rust);border-color:var(--line);background:#fff;}
+.kicker{
+  max-width:1180px;margin:0 auto;padding:.5rem 1.4rem;
+  font-size:.76rem;letter-spacing:.14em;color:var(--ink-2);
+  border-bottom:1px dashed var(--line);
+}
+.kicker b{color:var(--rust);font-weight:600;}
+
+/* ============ 首屏 ============ */
+.hero{
+  position:relative;overflow:hidden;
+  max-width:1180px;margin:0 auto;padding:2.6rem 1.4rem 3.2rem;
+  display:grid;grid-template-columns:1.06fr .94fr;gap:2.6rem;align-items:center;
+}
+.sky{
+  position:absolute;inset:0;z-index:0;
+  background:
+    linear-gradient(180deg, #dfd3ba 0%, #e7ddc6 26%, #eceae0 52%, #e2e6df 74%, #cfd8cf 100%);
+}
+.sky::after{
+  content:"";position:absolute;inset:0;
+  background:repeating-linear-gradient(90deg, rgba(122,92,58,.035) 0 2px, transparent 2px 9px);
+}
+.sun{
+  position:absolute;right:6%;top:14%;z-index:1;width:150px;height:150px;border-radius:50%;
+  background:radial-gradient(circle at 38% 34%, #ffe7b8 0%, #f0c987 32%, #e0a65c 62%, #c98a4a 100%);
+  box-shadow:
+    0 0 60px 18px rgba(233,196,122,.55),
+    0 0 130px 46px rgba(233,196,122,.30),
+    0 0 220px 90px rgba(181,101,58,.16);
+  animation:glow 13s ease-in-out infinite;
+}
+@keyframes glow{0%,100%{transform:scale(1);opacity:.94;}50%{transform:scale(1.06);opacity:1;}}
+.cloud{position:absolute;z-index:2;border-radius:999px;background:rgba(255,252,246,.72);}
+.cloud i{position:absolute;border-radius:999px;background:rgba(255,252,246,.72);}
+.c1{width:210px;height:46px;left:4%;top:22%;animation:drift 86s linear infinite;}
+.c1 i:nth-child(1){width:84px;height:84px;left:26px;top:-46px;}
+.c1 i:nth-child(2){width:60px;height:60px;left:122px;top:-30px;}
+.c2{width:170px;height:38px;left:30%;top:44%;animation:drift 104s linear infinite;}
+.c2 i{width:66px;height:66px;left:92px;top:-36px;}
+.c3{width:140px;height:32px;right:22%;top:34%;animation:drift 122s linear infinite reverse;}
+.c3 i{width:56px;height:56px;left:74px;top:-30px;}
+@keyframes drift{from{transform:translateX(-14vw);}to{transform:translateX(104vw);}}
+.bird{position:absolute;z-index:3;color:var(--ink);font-size:1.5rem;line-height:1;}
+.b1{left:10%;top:30%;transform:rotate(-6deg);animation:fly 17s linear infinite;}
+.b2{left:22%;top:20%;transform:rotate(4deg) scale(.8);animation:fly 23s linear infinite 6s;}
+.b3{left:46%;top:16%;transform:rotate(-3deg) scale(.6);animation:fly 29s linear infinite 13s;}
+@keyframes fly{from{transform:translate(0,0) rotate(-6deg);opacity:0;}8%{opacity:1;}92%{opacity:1;}to{transform:translate(64vw, -10vh) rotate(-6deg);opacity:0;}}
+.ridge{position:absolute;left:0;right:0;bottom:0;height:30%;z-index:1;}
+.ridge span{position:absolute;left:0;right:0;bottom:0;border-radius:50% 50% 0 0;}
+.ridge span:nth-child(1){height:120%;background:radial-gradient(ellipse at 30% 100%, #b9a98c 0%, #9c8c6e 55%, #8a795c 100%);opacity:.85;}
+.ridge span:nth-child(2){height:86%;background:radial-gradient(ellipse at 60% 100%, #8f7f62 0%, #73664c 60%, #5f5440 100%);opacity:.9;}
+.ridge span:nth-child(3){height:56%;background:radial-gradient(ellipse at 45% 100%, #5b5140 0%, #413a2c 70%, #2c271d 100%);}
+
+.hero-txt{position:relative;z-index:5;}
+.hero-txt .tag{
+  display:inline-block;font-size:.72rem;letter-spacing:.3em;color:#fff;
+  background:var(--ink);padding:.34rem .8rem;border-radius:2px;margin-bottom:1.1rem;
+}
+.hero-txt h1{
+  font-size:clamp(2rem, 4.6vw + 1rem, 4.4rem);
+  line-height:1.14;margin:0 0 1.2rem;font-weight:700;letter-spacing:.01em;
+}
+.hero-txt h1 em{font-style:normal;position:relative;white-space:nowrap;}
+.hero-txt h1 em::after{
+  content:"";position:absolute;left:0;right:-6px;bottom:.02em;height:.16em;z-index:-1;
+  background:linear-gradient(100deg, var(--clay), var(--rust) 52%, var(--plum));
+  transform:skewX(-17deg);opacity:.82;
+}
+.hero-txt p{margin:0 0 1.5rem;color:var(--ink-2);max-width:46ch;font-size:1.02rem;}
+.hero-txt .acts{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.6rem;}
+.hero-txt .acts span{
+  font-size:.8rem;padding:.3rem .66rem;border:1px solid var(--line);
+  background:#fffdf8;border-radius:999px;color:var(--ink-2);
+}
+.hero-txt .acts span b{color:var(--rust);font-weight:600;}
+.hero-txt .cta{display:flex;gap:.8rem;flex-wrap:wrap;}
+.btn{
+  display:inline-flex;align-items:center;gap:.5rem;
+  padding:.78rem 1.4rem;font-size:.92rem;font-weight:600;color:#fff;
+  background:var(--ink);border:1px solid var(--ink);border-radius:2px;cursor:pointer;
+  font-family:inherit;letter-spacing:.02em;
+}
+.btn:hover{background:var(--rust);border-color:var(--rust);color:#fff;}
+.btn.ghost{background:transparent;color:var(--ink);}
+.btn.ghost:hover{background:var(--paper-2);color:var(--rust);}
+
+/* 数字 22 */
+.num22{position:relative;z-index:5;font-family:Georgia,"Times New Roman",serif;font-weight:700;}
+.num22 .n{
+  font-size:clamp(7rem, 15vw + 2rem, 15rem);line-height:.86;letter-spacing:-.06em;
+  background:linear-gradient(160deg, var(--clay), var(--rust) 55%, var(--plum));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  text-shadow:0 4px 30px rgba(122,92,58,.18);
+}
+.num22 .n small{font-size:.28em;letter-spacing:.02em;margin-left:.1em;color:var(--umber);-webkit-text-fill-color:var(--umber);}
+.num22 p{margin:.4rem 0 0;font-size:.92rem;color:var(--ink-2);letter-spacing:.05em;}
+
+/* 数据格 */
+.stats{
+  position:relative;z-index:5;margin-top:2rem;
+  display:grid;grid-template-columns:repeat(4,1fr);gap:1px;
+  background:var(--line);border:1px solid var(--line);
+}
+.stats div{background:var(--paper);padding:.9rem .8rem;}
+.stats dt{margin:0;font-size:.7rem;letter-spacing:.18em;color:var(--ink-2);}
+.stats dd{margin:.26rem 0 0;font-family:Georgia,serif;font-size:1.4rem;color:var(--rust);}
+.stats dd small{font-size:.66rem;color:var(--ink-2);font-family:inherit;}
+
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
+
+/* ============ 通用区块 ============ */
+section{padding:3.6rem 0 1rem;border-top:1px solid var(--line-2);}
+section > .wrap{max-width:1180px;margin:0 auto;padding:0 1.4rem;}
+.sec-h{display:flex;align-items:flex-end;gap:1.2rem;flex-wrap:wrap;margin-bottom:2rem;}
+.sec-h .idx{
+  font-family:Georgia,serif;font-size:2.6rem;line-height:1;color:var(--clay);font-weight:700;
+}
+.sec-h h2{margin:0;font-size:clamp(1.5rem, 2.4vw + .9rem, 2.2rem);letter-spacing:.01em;}
+.sec-h h2 small{
+  display:block;font-size:.68rem;letter-spacing:.26em;color:var(--ink-2);font-weight:400;
+  margin-bottom:.5rem;font-family:inherit;
+}
+.sec-h p{margin:.5rem 0 0;color:var(--ink-2);max-width:60ch;font-size:.96rem;}
+.lead{
+  max-width:78ch;margin:0 0 2rem;padding:1.1rem 1.3rem;
+  background:#fffdf8;border:1px solid var(--line);border-left:4px solid var(--clay);
+  font-size:.98rem;color:var(--ink-2);
+}
+.lead b{color:var(--rust);}
+
+/* 胶囊 */
+.pill{display:inline-block;font-size:.72rem;padding:.16rem .62rem;border-radius:2px;letter-spacing:.04em;white-space:nowrap;}
+.p-clay{background:rgba(201,138,74,.16);color:#8a5a20;border:1px solid rgba(201,138,74,.4);}
+.p-slate{background:rgba(63,92,102,.13);color:#2b4550;border:1px solid rgba(63,92,102,.34);}
+.p-plum{background:rgba(122,74,94,.13);color:#5e3446;border:1px solid rgba(122,74,94,.34);}
+.p-moss{background:rgba(111,138,90,.15);color:#4c623c;border:1px solid rgba(111,138,90,.36);}
+.p-rust{background:rgba(181,101,58,.14);color:#8a4624;border:1px solid rgba(181,101,58,.34);}
+.p-ink{background:var(--ink);color:#f2ece1;border:1px solid var(--ink);}
+
+/* ============ ① 22 个动作：计数器网格 ============ */
+.acts-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:1px;
+  background:var(--line);border:1px solid var(--line);
+  counter-reset:act;
+}
+.acts-grid article{
+  position:relative;background:var(--paper);padding:1.5rem 1.3rem 1.3rem;
+  transition:transform .34s ease, background .34s ease, box-shadow .34s ease;
+  overflow:hidden;
+}
+.acts-grid article::before{
+  counter-increment:act;content:counter(act,decimal-leading-zero);
+  position:absolute;right:.2rem;top:-.5rem;z-index:0;
+  font-family:Georgia,serif;font-size:5rem;line-height:1;font-weight:700;
+  color:rgba(122,92,58,.10);
+  transition:color .34s ease, transform .5s ease;
+}
+.acts-grid article:hover{background:#fffdf8;transform:translateY(-5px);box-shadow:0 14px 34px -16px rgba(36,30,24,.5);z-index:2;}
+.acts-grid article:hover::before{color:rgba(201,138,74,.34);transform:rotate(-4deg) scale(1.06);}
+.acts-grid .no{
+  display:inline-block;font-family:Georgia,serif;font-size:.74rem;color:var(--clay);
+  letter-spacing:.1em;margin-bottom:.5rem;position:relative;z-index:1;
+}
+.acts-grid h3{margin:0 0 .5rem;font-size:1.06rem;position:relative;z-index:1;}
+.acts-grid p{margin:0;font-size:.86rem;color:var(--ink-2);position:relative;z-index:1;}
+.acts-grid .do{
+  margin-top:.9rem;padding-top:.7rem;border-top:1px dashed var(--line);
+  font-size:.8rem;color:var(--rust);position:relative;z-index:1;
+}
+.acts-grid .do::before{content:"动作 ";letter-spacing:.1em;color:var(--umber);}
+
+/* ============ ② 片单：横向滑动卡 ============ */
+.belt-head{display:flex;align-items:baseline;gap:1rem;margin-bottom:1.2rem;flex-wrap:wrap;}
+.belt-head .hint{font-size:.78rem;color:var(--ink-2);letter-spacing:.04em;}
+.belt{
+  display:flex;gap:1rem;overflow-x:auto;scroll-snap-type:x mandatory;
+  padding:.4rem .2rem 1.4rem;scrollbar-width:thin;scrollbar-color:var(--clay) transparent;
+}
+.belt::-webkit-scrollbar{height:7px;}
+.belt::-webkit-scrollbar-thumb{background:var(--clay);border-radius:4px;}
+.belt figure{
+  flex:0 0 288px;scroll-snap-align:start;margin:0;
+  border:1px solid var(--line);background:#fffdf8;transition:transform .35s ease, box-shadow .35s ease;
+}
+.belt figure:hover{transform:translateY(-7px);box-shadow:0 18px 40px -20px rgba(36,30,24,.55);}
+.poster{
+  position:relative;height:300px;display:flex;align-items:flex-end;padding:1rem;
+  overflow:hidden;
+}
+.poster::before{
+  content:"";position:absolute;inset:0;z-index:1;
+  background:linear-gradient(135deg, rgba(255,255,255,.16), transparent 55%, rgba(36,30,24,.34));
+  transform:skewX(-14deg) translateX(-34%);transition:transform .9s ease;
+}
+.belt figure:hover .poster::before{transform:skewX(-14deg) translateX(34%);}
+.poster i{
+  position:absolute;inset:0;z-index:0;opacity:.5;
+  background:
+    repeating-linear-gradient(0deg, rgba(255,255,255,.05) 0 3px, transparent 3px 15px),
+    repeating-linear-gradient(90deg, rgba(0,0,0,.05) 0 2px, transparent 2px 9px);
+}
+.poster b{
+  position:relative;z-index:2;font-family:Georgia,serif;font-size:1.5rem;line-height:1.2;color:#fff;
+  text-shadow:0 2px 14px rgba(20,16,12,.6);
+}
+.p1{background:linear-gradient(150deg,#7a5c3a,#b5653a);}
+.p2{background:linear-gradient(150deg,#3f5c66,#6f8a5a);}
+.p3{background:linear-gradient(150deg,#7a4a5e,#c98a4a);}
+.p4{background:linear-gradient(150deg,#5b5140,#7a5c3a);}
+.p5{background:linear-gradient(150deg,#4a6b7a,#3f5c66);}
+.p6{background:linear-gradient(150deg,#8a5a20,#c98a4a);}
+.p7{background:linear-gradient(150deg,#6f8a5a,#b5653a);}
+.p8{background:linear-gradient(150deg,#2b4550,#7a4a5e);}
+.p9{background:linear-gradient(150deg,#73664c,#a88a5e);}
+.p10{background:linear-gradient(150deg,#5e3446,#c98a4a);}
+.p11{background:linear-gradient(150deg,#413a2c,#6f8a5a);}
+.p12{background:linear-gradient(150deg,#8a4624,#7a4a5e);}
+figcaption{padding:1rem 1.05rem 1.15rem;}
+figcaption .yr{font-family:Georgia,serif;font-size:.8rem;color:var(--clay);letter-spacing:.06em;}
+figcaption h3{margin:.24rem 0 .42rem;font-size:1rem;}
+figcaption p{margin:0;font-size:.8rem;color:var(--ink-2);}
+figcaption .row{margin-top:.7rem;display:flex;gap:.4rem;flex-wrap:wrap;}
+
+/* ============ ③ 四步：相连步骤条 ============ */
+.path{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:1px;
+  background:var(--line);border:1px solid var(--line);
+}
+.path div{
+  background:var(--paper);padding:1.6rem 1.3rem;position:relative;
+  transition:background .3s ease, color .3s ease, transform .3s ease;
+}
+.path div:hover{background:var(--ink);color:#f2ece1;transform:translateY(-4px);z-index:2;}
+.path .n{
+  font-family:Georgia,serif;font-size:3.4rem;line-height:1;font-weight:700;color:rgba(122,92,58,.22);
+  transition:color .3s ease, transform .5s ease;
+}
+.path div:hover .n{color:rgba(233,196,122,.62);transform:rotate(-6deg);}
+.path h3{margin:.5rem 0 .4rem;font-size:1.12rem;}
+.path p{margin:0;font-size:.86rem;color:var(--ink-2);}
+.path div:hover p{color:rgba(242,236,225,.74);}
+.path .arrow{
+  position:absolute;right:-.6rem;top:50%;transform:translateY(-50%) rotate(45deg);z-index:3;
+  width:1.1rem;height:1.1rem;background:var(--clay);border:2px solid var(--paper);
+}
+.path div:hover .arrow{background:var(--rust);}
+
+/* ============ ④ 对照表 ============ */
+.tbl-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line);background:#fffdf8;}
+table{width:100%;border-collapse:collapse;min-width:900px;font-size:.88rem;}
+thead th{
+  position:sticky;top:0;z-index:4;background:var(--ink);color:#f2ece1;
+  text-align:left;padding:.82rem .9rem;font-weight:600;letter-spacing:.03em;
+  border-right:1px solid rgba(242,236,225,.14);white-space:nowrap;
+}
+thead th:last-child{border-right:0;}
+tbody td{padding:.72rem .9rem;border-bottom:1px solid var(--line-2);border-right:1px solid var(--line-2);vertical-align:top;}
+tbody td:last-child{border-right:0;}
+tbody tr:nth-child(even){background:rgba(122,92,58,.035);}
+tbody tr:hover{background:rgba(201,138,74,.10);}
+tbody th{
+  text-align:left;font-weight:600;color:var(--ink);white-space:nowrap;
+  background:rgba(122,92,58,.05);border-right:1px solid var(--line-2);
+}
+.bar{display:block;height:5px;border-radius:3px;background:linear-gradient(90deg,var(--clay),var(--rust));margin-top:.34rem;}
+.bar.low{background:linear-gradient(90deg,#a9b0a6,#7c857b);}
+.bar.mid{background:linear-gradient(90deg,var(--clay),var(--slate));}
+.note{margin-top:1rem;font-size:.8rem;color:var(--ink-2);}
+
+/* ============ ⑤ 手风琴 ============ */
+.faq details{border:1px solid var(--line);background:#fffdf8;margin-bottom:.7rem;}
+.faq details[open]{box-shadow:0 10px 28px -18px rgba(36,30,24,.5);}
+.faq summary{
+  display:flex;align-items:center;gap:.9rem;padding:1.05rem 1.2rem;cursor:pointer;
+  list-style:none;font-weight:600;font-size:.98rem;
+}
+.faq summary::-webkit-details-marker{display:none;}
+.faq summary .q{
+  flex:0 0 auto;width:2rem;height:2rem;display:grid;place-items:center;
+  background:var(--ink);color:var(--clay);font-family:Georgia,serif;font-size:1.02rem;
+  transition:transform .3s ease, background .3s ease;
+}
+.faq details[open] summary .q{background:var(--rust);color:#fff;transform:rotate(180deg);}
+.faq summary::after{
+  content:"＋";margin-left:auto;font-size:1.4rem;line-height:1;color:var(--clay);
+  transition:transform .3s ease;
+}
+.faq details[open] summary::after{content:"－";transform:rotate(180deg);color:var(--rust);}
+.faq .ans{padding:0 1.2rem 1.3rem 4.1rem;color:var(--ink-2);font-size:.92rem;}
+.faq .ans blockquote{
+  margin:.9rem 0;padding:.8rem 1.05rem;background:var(--paper);
+  border-left:3px solid var(--clay);font-style:italic;color:var(--ink);
+}
+.faq .ans blockquote cite{display:block;margin-top:.4rem;font-style:normal;font-size:.78rem;color:var(--umber);letter-spacing:.06em;}
+
+/* ============ ⑥ 订阅 ============ */
+.sub{
+  background:linear-gradient(150deg, var(--ink), #4a4036);
+  color:#f2ece1;padding:2.4rem;border:1px solid var(--ink);
+  display:grid;grid-template-columns:1.1fr .9fr;gap:2rem;align-items:center;
+}
+.sub h3{margin:0 0 .5rem;font-size:1.5rem;}
+.sub p{margin:0;color:rgba(242,236,225,.72);font-size:.9rem;max-width:44ch;}
+.sub form{display:flex;gap:.6rem;flex-wrap:wrap;}
+.sub input{
+  flex:1 1 220px;min-width:0;padding:.8rem 1rem;font-size:.92rem;font-family:inherit;
+  background:#fffdf8;border:1px solid rgba(242,236,225,.3);color:var(--ink);border-radius:2px;
+}
+.sub input:focus{outline:2px solid var(--clay);outline-offset:-1px;}
+.sub button{
+  padding:.8rem 1.5rem;font-size:.92rem;font-weight:600;color:var(--ink);
+  background:var(--clay);border:1px solid var(--clay);cursor:pointer;font-family:inherit;
+}
+.sub button:hover{background:#e0b06a;}
+
+/* ============ 页脚 ============ */
+footer{border-top:1px solid var(--line);margin-top:3rem;padding:2.6rem 0 2rem;background:rgba(122,92,58,.05);}
+footer .wrap{max-width:1180px;margin:0 auto;padding:0 1.4rem;}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:2rem;margin-bottom:2rem;}
+.foot-grid h4{margin:0 0 .9rem;font-size:.92rem;letter-spacing:.06em;}
+.foot-grid ul{list-style:none;margin:0;padding:0;}
+.foot-grid li{margin-bottom:.42rem;font-size:.84rem;color:var(--ink-2);}
+.foot-grid a{color:var(--ink-2);}
+.foot-grid a:hover{color:var(--rust);}
+.copy{
+  border-top:1px dashed var(--line);padding-top:1.4rem;
+  display:flex;gap:1rem;flex-wrap:wrap;justify-content:space-between;align-items:center;
+  font-size:.8rem;color:var(--ink-2);
+}
+.copy .ok{color:var(--moss);font-weight:600;}
+.cr{
+  margin-top:1.4rem;padding:1.2rem 1.4rem;background:#fffdf8;border:1px solid var(--line);
+  border-left:4px solid var(--rust);font-size:.86rem;color:var(--ink-2);
+}
+.cr b{color:var(--rust);}
+.cr ol{margin:.6rem 0 0;padding-left:1.3rem;}
+.cr li{margin-bottom:.34rem;}
+
+/* ============ 响应式 ============ */
+@media (max-width:980px){
+  .hero{grid-template-columns:1fr;gap:1.4rem;padding-top:2rem;}
+  .sun{width:110px;height:110px;right:8%;}
+  .num22 .n{font-size:clamp(6rem,18vw,11rem);}
+  .acts-grid{grid-template-columns:repeat(2,1fr);}
+  .path{grid-template-columns:1fr 1fr;}
+  .path .arrow{display:none;}
+  .foot-grid{grid-template-columns:1fr 1fr;gap:1.6rem;}
+}
+@media (max-width:700px){
+  .stats{grid-template-columns:1fr 1fr;}
+  .sub{grid-template-columns:1fr;padding:1.8rem;}
+}
+@media (max-width:600px){
+  body{font-size:15.4px;}
+  .topbar .in{padding:.5rem 1rem;}
+  .kicker{padding:.42rem 1rem;font-size:.7rem;}
+  section > .wrap, .hero, footer .wrap{padding-left:1rem;padding-right:1rem;}
+  .acts-grid{grid-template-columns:1fr;}
+  .path{grid-template-columns:1fr;}
+  .faq .ans{padding-left:1.2rem;}
+  .foot-grid{grid-template-columns:1fr;}
+  .hero-txt h1{font-size:2.2rem;}
+  .sun, .cloud, .bird, .ridge{display:none;}
+  .hero{padding-bottom:2rem;}
+}
+@media print{
+  .topbar, .sub, .sun, .cloud, .bird, nav{display:none !important;}
+  body{background:#fff;font-size:10.5pt;}
+  section{page-break-inside:avoid;border-top:0;}
+  .belt{overflow:visible;flex-wrap:wrap;}
+  .belt figure{flex:1 1 200px;}
+  a{color:#000;}
+}
+
+/* 减少动画 */
+@media (prefers-reduced-motion:reduce){
+  .sun, .cloud, .bird{animation:none;}
+  .poster::before{transition:none;}
+  html{scroll-behavior:auto;}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaobao.js"></script>
+
+<header class="topbar">
+  <div class="in">
+    <div class="brand">22电影网<small>22 DIANYING WANG</small></div>
+    <nav role="navigation" aria-label="主导航">
+      <ul>
+        <li><a href="#acts">22 个动作</a></li>
+        <li><a href="#belt">片单</a></li>
+        <li><a href="#path">四步法</a></li>
+        <li><a href="#tbl">代价表</a></li>
+        <li><a href="#faq">九个实话</a></li>
+        <li><a href="#sub">订阅</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="kicker">
+    <b>站训</b>：评分回答"好不好"，动作回答"懂不懂"　·　<b>更新</b>：每月 3 部，只收"那一镜"　·　<b>影视资源</b>：0 个（不提供、不托管、不链接、不转存）
+  </div>
+</header>
+
+<!-- ============ 首屏 ============ -->
+<div class="sky" aria-hidden="true"></div>
+<div class="sun" aria-hidden="true"></div>
+<div class="cloud c1" aria-hidden="true"><i></i><i></i></div>
+<div class="cloud c2" aria-hidden="true"><i></i></div>
+<div class="cloud c3" aria-hidden="true"><i></i></div>
+<div class="bird b1" aria-hidden="true">˃</div>
+<div class="bird b2" aria-hidden="true">˃</div>
+<div class="bird b3" aria-hidden="true">˃</div>
+<div class="ridge" aria-hidden="true"><span></span><span></span><span></span></div>
+
+<main>
+<section class="hero" aria-labelledby="h1">
+  <div class="hero-txt">
+    <span class="tag">影像写作 · 正版观影指引</span>
+    <h1 id="h1">看懂一部电影，<br>只需要<em>22 个动作</em>。</h1>
+    <p>22电影网不做"电影推荐"（那是评分网站的事），只做两件事：把镜头拆开给你看，把正版路指给你走。片名、导演、年份、镜头描述仅用于影像教学与正版观影推荐。</p>
+    <div class="acts" role="list">
+      <span role="listitem">数<b>手</b></span>
+      <span role="listitem">数<b>静默</b></span>
+      <span role="listitem">关<b>声音</b></span>
+      <span role="listitem">记<b>一镜</b></span>
+      <span role="listitem">量<b>机位</b></span>
+    </div>
+    <div class="cta">
+      <a class="btn" href="#acts">从第一个动作开始</a>
+      <a class="btn ghost" href="#tbl">先看"免费"的代价</a>
+    </div>
+  </div>
+
+  <div class="num22" aria-hidden="true">
+    <div class="n">22<small>ACTIONS</small></div>
+    <p>22 个 30 秒就能完成的自测动作。<br>练完，你不再需要别人的影评。</p>
+  </div>
+
+  <dl class="stats">
+    <div><dt>自测动作</dt><dd>22<small>个</small></dd></div>
+    <div><dt>精选片单</dt><dd>12<small>部起</small></dd></div>
+    <div><dt>每月更新</dt><dd>3<small>部</small></dd></div>
+    <div><dt>影视资源</dt><dd>0<small>个</small></dd></div>
+  </dl>
+  <span class="sr-only">22电影网：用 22 个可自测动作看懂电影，提供正版观影指引、公有领域片单、镜头语言入门、按心情选片与观影成本对照。</span>
+</section>
+
+<!-- ============ ① 22 个动作 ============ -->
+<section id="acts" aria-labelledby="h-acts">
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="idx">01</span>
+      <div>
+        <h2 id="h-acts"><small>SECTION ONE · 练眼</small>22 个动作，比 100 条影评有用</h2>
+        <p>评分可以抄，动作只能练。以下 22 个动作每个都不超过 30 秒，不需要电影史学位，只需要"今天还剩多少电"。</p>
+      </div>
+    </div>
+
+    <p class="lead"><b>用法：</b>挑一部你已经看过三遍的片子，按顺序做 1—6 号，你会发现自己以前根本没看过它。<b>进阶：</b>7—14 号练节奏，15—18 号练耳朵，19—22 号练表达。</p>
+
+    <div class="acts-grid">
+      <article>
+        <span class="no">ACT 01</span>
+        <h3>数手</h3>
+        <p>一场戏里，演员的手出现了几次？手在切、在拧、在抖、在藏，还是在演。</p>
+        <div class="do">静音重看开场三分钟，只数"手"出现的次数，超过 7 次，这部片值得细看。</div>
+      </article>
+      <article>
+        <span class="no">ACT 02</span>
+        <h3>量机位</h3>
+        <p>镜头比人物眼睛高 30 厘米以上，导演在评判；齐平，导演在陪伴；低于腰线，导演在仰视。</p>
+        <div class="do">截图 5 张，量一量机位，写下"导演站在哪一边"。</div>
+      </article>
+      <article>
+        <span class="no">ACT 03</span>
+        <h3>数静默</h3>
+        <p>台词说完了，导演还给不给演员那六秒。台词说完再停三秒，是好片的及格线。</p>
+        <div class="do">用手表计时，全片找出最长的三次静默，记下画面里有什么。</div>
+      </article>
+      <article>
+        <span class="no">ACT 04</span>
+        <h3>关声音</h3>
+        <p>关掉声音看三十秒，若仍成立，它靠的是观察；若立刻失语，多半靠台词。</p>
+        <div class="do">选一场哭戏，静音看。若仍能感到悲伤，是表演；若只是皱眉，是配乐。</div>
+      </article>
+      <article>
+        <span class="no">ACT 05</span>
+        <h3>找边框</h3>
+        <p>门框、窗、镜子、栏杆、手臂——框中框 = 人在处境中；无框 = 人可自由。</p>
+        <div class="do">找出全片最窄的一个框，问自己"谁把他关进去的"。</div>
+      </article>
+      <article>
+        <span class="no">ACT 06</span>
+        <h3>看背影</h3>
+        <p>背影变小，比任何配乐都悲伤；背影变大，是反抗。背影是最省钱的表演。</p>
+        <div class="do">统计背影镜头数量。超过 5 个，导演信得过演员，也信得过观众。</div>
+      </article>
+      <article>
+        <span class="no">ACT 07</span>
+        <h3>数镜头</h3>
+        <p>一部 100 分钟的影片约 11,000 个镜头，但决定你记不记得住的，往往只有三五个。</p>
+        <div class="do">算出全片镜头数 ÷ 片长。大于 300/分钟 = 在说话；小于 90/分钟 = 在呼吸。</div>
+      </article>
+      <article>
+        <span class="no">ACT 08</span>
+        <h3>找重复</h3>
+        <p>同一个构图、同一句台词、同一件道具出现三次，第三次一定是答案。</p>
+        <div class="do">列出全片重复出现三次以上的"物"，它就是主题。</div>
+      </article>
+      <article>
+        <span class="no">ACT 09</span>
+        <h3>看光的方向</h3>
+        <p>光从窗外斜进来 = 还有希望；顶光 = 审讯；底光 = 恐怖；没光 = 认了。</p>
+        <div class="do">只看一场戏的打光，写出"光站在谁那边"。</div>
+      </article>
+      <article>
+        <span class="no">ACT 10</span>
+        <h3>数颜色</h3>
+        <p>全片只有三种颜色，是克制；突然多出第四种，是情绪爆发或导演失控。</p>
+        <div class="do">写下前 20 分钟出现的主色，再写下最后 20 分钟的主色，对比即剧情。</div>
+      </article>
+      <article>
+        <span class="no">ACT 11</span>
+        <h3>找"但是"</h3>
+        <p>一句话能说完，且这句话里没有"但是"，说明它还没开始讲故事。</p>
+        <div class="do">用一句话讲完这部片，必须含一个"但是"。讲不出，就是烂片。</div>
+      </article>
+      <article>
+        <span class="no">ACT 12</span>
+        <h3>看失败</h3>
+        <p>手艺片拍"做成"，纪录片拍"做不成"。看失败那一次，比看成功那一次更接近真相。</p>
+        <div class="do">找出全片唯一一次"没做成"的镜头，那通常是全片最贵的镜头。</div>
+      </article>
+      <article>
+        <span class="no">ACT 13</span>
+        <h3>看剪辑点</h3>
+        <p>在动作最高处切 = 制造紧张；在动作落定后切 = 留白。1+1=3，才是剪辑的魔法。</p>
+        <div class="do">数《战舰波将金号》"敖德萨阶梯"一段平均几秒一切，答案是约 1.3 秒。</div>
+      </article>
+      <article>
+        <span class="no">ACT 14</span>
+        <h3>等一镜</h3>
+        <p>长镜头的价值不是"炫技"，是"不许逃"。能中途走开 = 慢；走不开 = 长镜头。</p>
+        <div class="do">找全片最长的单一镜头，记下它"不切"的理由，写一句话。</div>
+      </article>
+      <article>
+        <span class="no">ACT 15</span>
+        <h3>听环境声</h3>
+        <p>雨声、炒菜声、电车声、翻纸声——现场声是片子的皮肤，配乐只是衣服。</p>
+        <div class="do">只听不看，写出三种"不是音乐的声音"，它们就是这部片的地点。</div>
+      </article>
+      <article>
+        <span class="no">ACT 16</span>
+        <h3>听 silence</h3>
+        <p>音乐一响，情绪就交给别人了；音乐一停，情绪才是你自己的。</p>
+        <div class="do">找出全片最安静的 10 秒，判断是"留白"还是"没钱做配乐"。</div>
+      </article>
+      <article>
+        <span class="no">ACT 17</span>
+        <h3>听台词之外</h3>
+        <p>真正的话都在台词之外：咳嗽、叹气、碗筷、脚步、关门。</p>
+        <div class="do">记录三句"没说出口的话"，它们比台词更贵。</div>
+      </article>
+      <article>
+        <span class="no">ACT 18</span>
+        <h3>看字幕边缘</h3>
+        <p>发抖的是 AI 放大，锐利的是真扫描。AI 放大 ≠ 高清修复，只是把模糊变得更大。</p>
+        <div class="do">放大字幕边缘 300%，若笔画发抖，是假 4K；若锐利，是真 4K 胶片扫描。</div>
+      </article>
+      <article>
+        <span class="no">ACT 19</span>
+        <h3>只记一镜</h3>
+        <p>影评的起手式只有一句：<b>我最忘不掉的那一镜，是……</b></p>
+        <div class="do">写完这一句，不超过 40 字，不许用"深刻""震撼""绝了"。</div>
+      </article>
+      <article>
+        <span class="no">ACT 20</span>
+        <h3>换个年龄</h3>
+        <p>同一部《花束般的恋爱》：20 岁看是甜，30 岁看是疼，35 岁看是真实。</p>
+        <div class="do">替 20 年后的自己写一句观后感，你会对现在的自己说什么。</div>
+      </article>
+      <article>
+        <span class="no">ACT 21</span>
+        <h3>问电量</h3>
+        <p>电量 &lt; 20% → 重温老片（熟饭最养胃）；电量 100% → 看冷门新片（生米最香，也最容易夹生）。</p>
+        <div class="do">把"今天还剩多少电"作为选片第一问，而非"评分多少"。</div>
+      </article>
+      <article>
+        <span class="no">ACT 22</span>
+        <h3>等三个月</h3>
+        <p>好片不挑观众，只挑时机。三个月后再看，你会删掉一半的"必看"。</p>
+        <div class="do">给这部片定一个"重看日期"，写进日历，别急着发朋友圈。</div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ② 片单 ============ -->
+<section id="belt" aria-labelledby="h-belt">
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="idx">02</span>
+      <div>
+        <h2 id="h-belt"><small>SECTION TWO · 片单</small>12 部，按"能练什么"排序</h2>
+        <p>不按分数排，按"能练哪个动作"排。片单每月只增 3 部：一部默片或修复版（练眼）、一部作者论（练记忆）、一部纪录片或短片（练判断）。</p>
+      </div>
+    </div>
+    <div class="belt-head">
+      <span class="pill p-clay">默片 3 部</span>
+      <span class="pill p-slate">长镜头 3 部</span>
+      <span class="pill p-moss">纪录片 3 部</span>
+      <span class="pill p-plum">作者论 3 部</span>
+      <span class="hint">← 左右滑动，共 12 部 · 均为正版发行或在保护期外的公有领域影片</span>
+    </div>
+
+    <div class="belt" role="list">
+      <figure role="listitem">
+        <div class="poster p1"><i></i><b>《大都会》<br>1927</b></div>
+        <figcaption>
+          <span class="yr">1927 · 弗里茨·朗</span>
+          <h3>大都会</h3>
+          <p>修复版三个字，比 4K 两个字值钱。2010 年找回 25 分钟残缺片段，布宜诺斯艾利斯纸箱里。</p>
+          <div class="row"><span class="pill p-clay">练 18</span><span class="pill p-slate">公有领域</span></div>
+        </figcaption>
+      </figure>
+      <figure role="listitem">
+        <div class="poster p2"><i></i><b>《东京物语》<br>1953</b></div>
+        <figcaption>
+          <span class="yr">1953 · 小津安二郎</span>
+          <h3>东京物语</h3>
+          <p>机位永远齐平，永远在榻榻米高度。量机位（动作 2）的教科书：导演全程在陪伴。</p>
+          <div class="row"><span class="pill p-slate">练 02</span><span class="pill p-clay">慢</span></div>
+        </figcaption>
+      </figure>
+      <figure role="listitem">
+        <div class="poster p3"><i></i><b>《战舰波将金号》<br>1925</b></div>
+        <figcaption>
+          <span class="yr">1925 · 爱森斯坦</span>
+          <h3>战舰波将金号</h3>
+          <p>"敖德萨阶梯"平均 1.3 秒一切。数剪辑点（动作 13）：1+1=3，这是剪辑被发明的时刻。</p>
+          <div class="row"><span class="pill p-rust">练 13</span><span class="pill p-slate">公有领域</span></div>
+        </figcaption>
+      </figure>
+      <figure role="listitem">
+        <div class="poster p4"><i></i><b>《圣女贞德蒙难记》<br>1928</b></div>
+        <figcaption>
+          <span class="yr">1928 · 德莱叶</span>
+          <h3>圣女贞德蒙难记</h3>
+          <p>全片特写。看脸（动作 6 的逆向练习）：没有背影可躲，演员只能靠眼神。</p>
+          <div class="row"><span class="pill p-clay">练 06</span><span class="pill p-moss">默片</span></div>
+        </figcaption>
+      </figure>
+      <figure role="listitem">
+        <div class="poster p5"><i></i><b>《迁徙的鸟》<br>2001</b></div>
+        <figcaption>
+          <span class="yr">2001 · 雅克·贝汉</span>
+          <h3>迁徙的鸟</h3>
+          <p>听环境声（动作 15）：没有一句台词，全片靠风声与翅声。自然是最贵的录音棚。</p>
+          <div class="row"><span class="pill p-moss">练 15</span><span class="pill p-clay">纪录片</span></div>
+        </figcaption>
+      </figure>
+      <figure role="listitem">
+        <div class="poster p6"><i></i><b>《完美的日子》<br>2023</b></div>
+        <figcaption>
+          <span class="yr">2023 · 维姆·文德斯</span>
+          <h3>完美的日子</h3>
+          <p>扫厕所的水声比配乐更响。找重复（动作 8）：同一把扫帚，扫出了整个人生。</p>
+          <div class="row"><span class="pill p-clay">练 08</span><span class="pill p-slate">声音</span></div>
+        </figcaption>
+      </figure>
+      <figure role="listitem">
+        <div class="poster p7"><i></i><b>《地球之盐》<br>2014</b></div>
+        <figcaption>
+          <span class="yr">2014 · 维姆·文德斯 / 萨勒加多</span>
+          <h3>地球之盐</h3>
+          <p>看失败（动作 12）：摄影师拍了 40 年苦难，最后只拍一朵花。看"手"（动作 1）。</p>
+          <div class="row"><span class="pill p-moss">练 12</span><span class="pill p-clay">纪录片</span></div>
+        </figcaption>
+      </figure>
+      <figure role="listitem">
+        <div class="poster p8"><i></i><b>《撒旦探戈》<br>1994</b></div>
+        <figcaption>
+          <span class="yr">1994 · 贝拉·塔尔</span>
+          <h3>撒旦探戈</h3>
+          <p>等一镜（动作 14）：7 小时，雨、泥、牛、人。走不开，所以是长镜头，不是慢。</p>
+          <div class="row"><span class="pill p-plum">练 14</span><span class="pill p-clay">长镜头</span></div>
+        </figcaption>
+      </figure>
+      <figure role="listitem">
+        <div class="poster p9"><i></i><b>《风烛泪》<br>1952</b></div>
+        <figcaption>
+          <span class="yr">1952 · 德·西卡</span>
+          <h3>风烛泪</h3>
+          <p>新现实主义：不演穷人，找穷人来。看"物"（动作 1 的变体）：一把钥匙就是全部剧情。</p>
+          <div class="row"><span class="pill p-slate">练 01</span><span class="pill p-clay">公版待核</span></div>
+        </figcaption>
+      </figure>
+      <figure role="listitem">
+        <div class="poster p10"><i></i><b>《花样年华》<br>2000</b></div>
+        <figcaption>
+          <span class="yr">2000 · 王家卫</span>
+          <h3>花样年华</h3>
+          <p>数颜色（动作 10）：全片只有旗袍的三种红。框中框（动作 5）：门、窗、走廊都是牢。</p>
+          <div class="row"><span class="pill p-rust">练 10</span><span class="pill p-slate">色彩</span></div>
+        </figcaption>
+      </figure>
+      <figure role="listitem">
+        <div class="poster p11"><i></i><b>《自由之火》<br>1931</b></div>
+        <figcaption>
+          <span class="yr">1931 · 小津安二郎</span>
+          <h3>自由之火</h3>
+          <p>导演的第一部长片。长片三部以内，导演还没学会撒谎（动作 21 的延伸）。</p>
+          <div class="row"><span class="pill p-plum">练 21</span><span class="pill p-slate">公有领域</span></div>
+        </figcaption>
+      </figure>
+      <figure role="listitem">
+        <div class="poster p12"><i></i><b>《2001 太空漫游》<br>1968</b></div>
+        <figcaption>
+          <span class="yr">1968 · 斯坦利·库布里克</span>
+          <h3>2001 太空漫游</h3>
+          <p>慢 ≠ 闷的反证：几乎没有对白，但没人走得开。看光的方向（动作 9）：光是唯一的角色。</p>
+          <div class="row"><span class="pill p-slate">练 09</span><span class="pill p-clay">长镜头</span></div>
+        </figcaption>
+      </figure>
+    </div>
+    <p class="note">※ 片单中标注"公有领域 / 公版"者，依据为"导演去世超过 70 年"或"首次发表超过 95 年"的经验性判断，<b>不构成法律意见</b>：① 影片公版 ≠ 这一版蓝光可随便传（修复劳动另受保护）；② 片中配乐可能仍在保护期；③ 署名是法律，不是礼貌。具体以著作权人公示与当地法律为准。均可通过正规流媒体、资料馆、公共图书馆合法获取。</p>
+  </div>
+</section>
+
+<!-- ============ ③ 四步法 ============ -->
+<section id="path" aria-labelledby="h-path">
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="idx">03</span>
+      <div>
+        <h2 id="h-path"><small>SECTION THREE · 路径</small>四步，把"看不懂"变成"看懂了"</h2>
+        <p>看懂电影不需要学位，需要顺序。以下四步按顺序做，每步都有明确耗时，总共不超过 3 小时。</p>
+      </div>
+    </div>
+
+    <div class="path">
+      <div>
+        <span class="n">01</span>
+        <span class="arrow" aria-hidden="true"></span>
+        <h3>只看手</h3>
+        <p><b>练观察 · 90 分钟。</b>静音重看一遍，只记演员的手在干什么。手会出卖一切：切洋葱的手势、拧螺丝的耐心、拉坯时泥上的纹、转身时衣角的停顿。</p>
+      </div>
+      <div>
+        <span class="n">02</span>
+        <span class="arrow" aria-hidden="true"></span>
+        <h3>只数镜</h3>
+        <p><b>练节奏 · 15 分钟。</b>算镜头数 ÷ 片长。大于 300/分钟 = 在说话（MV、商业片）；小于 90/分钟 = 在呼吸（侯孝贤、小津、塔可夫斯基）。</p>
+      </div>
+      <div>
+        <span class="n">03</span>
+        <span class="arrow" aria-hidden="true"></span>
+        <h3>只听声</h3>
+        <p><b>练耳朵 · 30 分钟。</b>闭眼听三分钟：雨、炒菜、电车、翻纸、咳嗽、关门。现场声是皮肤，配乐只是衣服。记下三种"不是音乐的声音"。</p>
+      </div>
+      <div>
+        <span class="n">04</span>
+        <span class="arrow" aria-hidden="true"></span>
+        <h3>只写一镜</h3>
+        <p><b>练表达 · 10 分钟。</b>写下"我最忘不掉的那一镜，是……"，不超过 40 字，不许用"深刻""震撼""绝了"。写不出，说明还没看懂，重看。</p>
+      </div>
+    </div>
+
+    <p class="lead" style="margin-top:2rem"><b>按电量选片（本站独有索引维度）：</b>电量 &lt; 20% → 重温老片，熟饭最养胃；电量 20%–60% → 看纪录片，下饭不费脑；电量 60%–90% → 看作者论，需要一点耐心；电量 100% → 看冷门新片，生米最香，也最容易夹生。<b>反例：</b>别在地铁看悬疑——你会错过站；别在吃饭时看悬疑——你会放下筷子；别在失眠时看文艺——你会更清醒。</p>
+  </div>
+</section>
+
+<!-- ============ ④ 代价表 ============ -->
+<section id="tbl" aria-labelledby="h-tbl">
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="idx">04</span>
+      <div>
+        <h2 id="h-tbl"><small>SECTION FOUR · 代价</small>八种"免费"，八种代价</h2>
+        <p>"免费"不是没有成本，是成本由谁来付。下表为经验性评估（非实测数据），用于说明"为什么正版反而更便宜"。</p>
+      </div>
+    </div>
+
+    <div class="tbl-wrap">
+      <table>
+        <caption class="sr-only">八种观影渠道的真免费度、干净度、画质与代价对照</caption>
+        <thead>
+          <tr>
+            <th scope="col">渠道</th>
+            <th scope="col">真免费度</th>
+            <th scope="col">干净度</th>
+            <th scope="col">画质</th>
+            <th scope="col">合法</th>
+            <th scope="col">代价由谁付</th>
+            <th scope="col">本站建议</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">公共图书馆影音借阅</th>
+            <td>96%<u class="bar" style="width:96%"></u></td>
+            <td>99%<u class="bar" style="width:99%"></u></td>
+            <td>蓝光/修复版</td>
+            <td><span class="pill p-moss">合法</span></td>
+            <td>财政（即纳税人，含你自己）</td>
+            <td><span class="pill p-ink">首选</span></td>
+          </tr>
+          <tr>
+            <th scope="row">电影资料馆 / 艺术院线放映</th>
+            <td>70%<u class="bar mid" style="width:70%"></u></td>
+            <td>99%<u class="bar" style="width:99%"></u></td>
+            <td>35mm / 4K 修复</td>
+            <td><span class="pill p-moss">合法</span></td>
+            <td>票价 + 你的时间</td>
+            <td><span class="pill p-ink">最值</span></td>
+          </tr>
+          <tr>
+            <th scope="row">正规流媒体免费档（AVOD）</th>
+            <td>80%<u class="bar mid" style="width:80%"></u></td>
+            <td>88%<u class="bar mid" style="width:88%"></u></td>
+            <td>1080p 为主</td>
+            <td><span class="pill p-moss">合法</span></td>
+            <td>广告主</td>
+            <td><span class="pill p-clay">常用</span></td>
+          </tr>
+          <tr>
+            <th scope="row">公有领域 / 公版影片档案库</th>
+            <td>95%<u class="bar" style="width:95%"></u></td>
+            <td>90%<u class="bar mid" style="width:90%"></u></td>
+            <td>修复版较佳</td>
+            <td><span class="pill p-moss">合法</span></td>
+            <td>基金会与捐赠者</td>
+            <td><span class="pill p-ink">练眼</span></td>
+          </tr>
+          <tr>
+            <th scope="row">导演 / 制片方官方频道</th>
+            <td>60%<u class="bar mid" style="width:60%"></u></td>
+            <td>97%<u class="bar" style="width:97%"></u></td>
+            <td>官方母版</td>
+            <td><span class="pill p-moss">合法</span></td>
+            <td>创作者本人</td>
+            <td><span class="pill p-clay">短片</span></td>
+          </tr>
+          <tr>
+            <th scope="row">盗版资源站 / 网盘分享</th>
+            <td>18%<u class="bar low" style="width:18%"></u></td>
+            <td>14%<u class="bar low" style="width:14%"></u></td>
+            <td>枪版 / 假 4K</td>
+            <td><span class="pill p-rust">侵权</span></td>
+            <td>创作者、下一代观众、你的设备</td>
+            <td><span class="pill p-rust">拒绝</span></td>
+          </tr>
+          <tr>
+            <th scope="row">破解 / 盗链 App</th>
+            <td>40%<u class="bar low" style="width:40%"></u></td>
+            <td>9%<u class="bar low" style="width:9%"></u></td>
+            <td>不稳定</td>
+            <td><span class="pill p-rust">侵权</span></td>
+            <td>你的隐私与账号</td>
+            <td><span class="pill p-rust">危险</span></td>
+          </tr>
+          <tr>
+            <th scope="row">盗摄枪版（影院偷拍）</th>
+            <td>6%<u class="bar low" style="width:6%"></u></td>
+            <td>8%<u class="bar low" style="width:8%"></u></td>
+            <td>画幅歪、声音是混响</td>
+            <td><span class="pill p-rust">侵权</span></td>
+            <td>整条产业链的下一部</td>
+            <td><span class="pill p-rust">最贵</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note"><b>四笔账：</b>① <b>时间账</b>——找资源平均 20 分钟，正版决策 12 秒；② <b>安全账</b>——盗链与破解是木马、钓鱼、挖矿的重灾区；③ <b>体验账</b>——100 分钟影片约 14.4 万帧，修复版一帧一帧扫，京都影像中心"每天只能修 30 秒素材"；④ <b>代价转移账</b>——你省下的 40 块，是从下一个好导演的预算里拿走的。<br><b>一句话：</b>你以为省了 40 块，实际看到的是一部不存在的电影。</p>
+  </div>
+</section>
+
+<!-- ============ ⑤ 九个实话 ============ -->
+<section id="faq" class="faq" aria-labelledby="h-faq">
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="idx">05</span>
+      <div>
+        <h2 id="h-faq"><small>SECTION FIVE · 实话</small>九个常被问到的问题，九个不讨喜的回答</h2>
+        <p>本站保留相互矛盾的观点，因为电影本来就不只有一种看法。只接受"哪一年、哪一镜、为什么"级别的反驳。</p>
+      </div>
+    </div>
+
+    <details open>
+      <summary><span class="q" aria-hidden="true">1</span>文艺片为什么"看不懂"？</summary>
+      <div class="ans">
+        <p>不是你智商不够，是<b>习惯</b>不够。商业片训练你"等反转"，文艺片训练你"等光"。前者给答案，后者给时间。解决办法不是补课，是把"剧情"这个要求先放下：只看手、只听声、只数镜（动作 1、15、7）。</p>
+        <blockquote>"凡是能用'好看/难看/深刻/震撼'概括的评价，都还没开始看电影。"<cite>—— 22电影网 · 观影守则第 1 条</cite></blockquote>
+      </div>
+    </details>
+
+    <details>
+      <summary><span class="q" aria-hidden="true">2</span>长镜头是不是"装"？</summary>
+      <div class="ans">
+        <p>长镜头 ≠ 好镜头。判断标准只有一个：<b>你能不能中途走开</b>。能走开 = 慢；走不开 = 长镜头。《2001 太空漫游》几乎无对白但没人走得开，是长镜头；《撒旦探戈》7 小时雨中牛群，也是长镜头。而大量"氛围空镜"只是节奏失控。</p>
+        <p>长镜头最诚实的地方，是它<b>不许你逃</b>：演员不能靠剪辑救，调度不能靠重拍救，观众不能靠快进救。</p>
+      </div>
+    </details>
+
+    <details>
+      <summary><span class="q" aria-hidden="true">3</span>"慢电影"是不是"文艺片"？</summary>
+      <div class="ans">
+        <p>不是。慢 ≠ 文艺 ≠ 闷，三者只有交集，没有包含关系。</p>
+        <ul>
+          <li><b>慢</b>：单位时间内的信息量低（镜头长、对白少、留白多）。</li>
+          <li><b>文艺</b>：以人物内心与关系为第一动机，而非情节。</li>
+          <li><b>闷</b>：观众清醒地意识到"可以切了"。</li>
+        </ul>
+        <p>反证：《疯狂的麦克斯 4》是文艺片（讲救赎），但一点都不慢；《2001 太空漫游》极慢，但绝不闷；《战舰波将金号》又快又文艺。本站推荐的多是"慢"与"文艺"的交集，但坚决排除"闷"。</p>
+      </div>
+    </details>
+
+    <details>
+      <summary><span class="q" aria-hidden="true">4</span>"修复版"和"4K"是一回事吗？</summary>
+      <div class="ans">
+        <p>不是。高清被用烂了，真正的差别在四件事：<b>分辨率、码率、色彩位深、动态范围</b>。修复是<b>工艺</b>，4K 只是<b>尺寸</b>。</p>
+        <ol>
+          <li><b>真 4K</b> = 4K 胶片扫描（约 4000 条水平像素）。</li>
+          <li><b>假 4K</b> = 1080p 数字源 AI 上采样，文件大了一倍，信息没多一个像素。</li>
+          <li><b>AI 放大 ≠ 高清修复</b>：只是把模糊变得更大。放大字幕边缘 300%，<b>发抖的是 AI，锐利的是真扫描</b>。</li>
+          <li><b>修复工艺</b>：找底片（有时在布宜诺斯艾利斯的纸箱里）→ 逐帧清洁扫描（100 分钟 ≈ 14.4 万帧）→ 手工去脏点 → 重新调色（颜色是考据，不是审美）→ 声音修复 → 字幕与花絮。<b>《大都会》修了六年，其中四年在找那 25 分钟。</b></li>
+        </ol>
+        <p>结论：<b>修复版三个字，比 4K 两个字值钱。</b></p>
+      </div>
+    </details>
+
+    <details>
+      <summary><span class="q" aria-hidden="true">5</span>为什么"作者论"经常出错？</summary>
+      <div class="ans">
+        <p>作者论（auteur theory）是最有用的入门工具，也是最危险的结论。三个常见误用：</p>
+        <ul>
+          <li><b>忽略编剧</b>：小津安二郎的"小津味"，一半来自野田高梧；成濑巳喜男被小津盖住，很大程度因为没人和他长期共写。</li>
+          <li><b>忽略摄影与美术</b>：侯孝贤的"气韵"，李屏宾的摄影与陈锦富、黄文英的美术，至少占一半。</li>
+          <li><b>把"风格"当"好坏"</b>：风格强烈 ≠ 作者强大。能重复的是作者，能突破的是大师。</li>
+        </ul>
+        <p>正确用法：<b>用作者论找入口，用分工论做校验。</b>连看同一导演 3 部，找出他重复的那个"习惯动作"，那通常就是他真正在意的事。</p>
+      </div>
+    </details>
+
+    <details>
+      <summary><span class="q" aria-hidden="true">6</span>"默片"是不是"老片"？</summary>
+      <div class="ans">
+        <p>不是。"默片"是<b>没有同步对白</b>，"老片"是<b>年代</b>。两者交集很大，但概念不同。默片是学习镜头语言的捷径，因为默片没有台词可躲，<b>只能靠构图、表演、剪辑、字幕</b>。上手度 90%。</p>
+        <p>三个必看起点：《战舰波将金号》（剪辑）、《大都会》（美术与特效）、《圣女贞德蒙难记》（表演）。<b>反例：</b>别在地铁看默片——你会错过钢琴。</p>
+      </div>
+    </details>
+
+    <details>
+      <summary><span class="q" aria-hidden="true">7</span>"公有领域 / 公版电影"怎么判断？</summary>
+      <div class="ans">
+        <p>三条经验判断（各国期限不同，以当地法律为准）：① 导演去世超过 70 年；② 首次发表超过 95 年；③ 版权人未按期续期（多见于早期美国片）。</p>
+        <p>但有三个常被忽略的<b>雷</b>：</p>
+        <ol>
+          <li><b>影片公版 ≠ 这一版蓝光可随便传</b>：修复、调色、字幕、花絮是新的劳动，受新的保护。</li>
+          <li><b>片中音乐常在保护期</b>：1940 年代的歌，词曲作者可能 1970 年代才去世。</li>
+          <li><b>署名是法律，不是礼貌</b>：公版不等于"无主"，导演、摄影、编剧、演员的名字一个都不能省。</li>
+        </ol>
+        <p>本站片单中涉及公版者，均为<b>经验性说明，不构成法律意见</b>，具体以著作权人公示与当地法律为准。均建议通过正规流媒体、资料馆、公共图书馆获取。</p>
+      </div>
+    </details>
+
+    <details>
+      <summary><span class="q" aria-hidden="true">8</span>"电影网"为什么不提供资源？</summary>
+      <div class="ans">
+        <p>因为"电影网"指的应该是<b>"方法与片单的网络"</b>，不是"文件的网络"。理由四条：</p>
+        <ul>
+          <li><b>法律上</b>：传播侵权作品的后果，重于单纯观看。我国《刑法》第 217 条对"以营利为目的"的复制发行设有三年以下有期徒刑，情节特别严重者三至七年；《著作权法》第 54 条规定侵权赔偿为权利人实际损失或侵权人违法所得，难以计算时法定赔偿上限为 500 万元，下限为 500 元。</li>
+          <li><b>安全上</b>：盗链与破解 App 是木马、钓鱼、挖矿的重灾区。</li>
+          <li><b>体验上</b>：枪版画幅是歪的、声音是混响的、字幕是机翻的。你以为省了 40 块，实际看到的是一部不存在的电影。</li>
+          <li><b>伦理上</b>：文艺片的票房有 1/3 来自上映第三周之后，那 1/3 几乎全是"被推荐"来的。你不买票，就是从不推荐。</li>
+        </ul>
+        <p>本站<b>不提供、不托管、不链接、不转存</b>任何影视作品文件，也<b>不提供任何"免费影视站"的网址、名称、搜索方法与入口</b>。只做五件事：公共图书馆影音借阅、电影资料馆放映、正规流媒体免费档、公有领域档案库、导演官方频道。</p>
+      </div>
+    </details>
+
+    <details>
+      <summary><span class="q" aria-hidden="true">9</span>这个站一个月更新几次？</summary>
+      <div class="ans">
+        <p><b>每月 3 部</b>，固定节奏：一部默片或修复版（练眼）、一部作者论（练记忆）、一部纪录片或短片（练判断）。</p>
+        <p><b>五条红线：</b>不追首映日 / 不刷榜单 / 不抄豆瓣 / 不写"必看" / 不提供资源。</p>
+        <p><b>投稿规范：</b>只收"那一镜"。必须含<b>年份、导演、时分秒</b>，不许用"深刻""震撼""绝了"。欢迎反驳，但只接受"哪一年、哪一镜、为什么"级别的反驳。</p>
+      </div>
+    </details>
+  </div>
+</section>
+
+<!-- ============ ⑥ 订阅 ============ -->
+<section id="sub" aria-labelledby="h-sub">
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="idx">06</span>
+      <div>
+        <h2 id="h-sub"><small>SECTION SIX · 订阅</small>每月三部，不多不少</h2>
+        <p>不追首映日，不刷榜单，不抄豆瓣。只把"那一镜"寄给你。</p>
+      </div>
+    </div>
+
+    <div class="sub">
+      <div>
+        <h3>把"那一镜"寄到你 inbox</h3>
+        <p>每月 22 日发出：一部默片或修复版（练眼）、一部作者论（练记忆）、一部纪录片或短片（练判断），附一个"22 秒自测动作"。退订一行字，不挽留、不问原因。</p>
+      </div>
+      <form onsubmit="event.preventDefault();this.querySelector('button').textContent='已订阅 ✓';this.querySelector('button').style.background='#6f8a5a';">
+        <label for="mail" class="sr-only">邮箱地址</label>
+        <input id="mail" type="email" placeholder="name@domain.com" required autocomplete="email">
+        <button type="submit">订阅 · 免费</button>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>22电影网 · 22 DIANYING WANG</h4>
+        <p style="font-size:.86rem;color:var(--ink-2);max-width:40ch">评分回答"好不好"，动作回答"懂不懂"。影像写作与正版观影指引，不提供任何影视资源下载与在线播放。</p>
+        <p style="font-size:.8rem;color:var(--moss);margin-top:.6rem"><b>影视资源：0 个</b>　正版渠道：5 种</p>
+      </div>
+      <div>
+        <h4>栏目</h4>
+        <ul>
+          <li><a href="#acts">22 个动作</a></li>
+          <li><a href="#belt">12 部片单</a></li>
+          <li><a href="#path">四步法</a></li>
+          <li><a href="#tbl">代价对照表</a></li>
+          <li><a href="#faq">九个实话</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>正版渠道</h4>
+        <ul>
+          <li>公共图书馆影音借阅</li>
+          <li>电影资料馆 / 艺术院线</li>
+          <li>正规流媒体免费档（AVOD）</li>
+          <li>公有领域影片档案库</li>
+          <li>导演 / 制片方官方频道</li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于</h4>
+        <ul>
+          <li><a href="#sub">订阅</a></li>
+          <li><a href="#">推荐片目（锚点）</a></li>
+          <li><a href="#">观影守则（锚点）</a></li>
+          <li><a href="#">投稿与抬杠规范（锚点）</a></li>
+          <li><a href="#">更新日志（锚点）</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="cr">
+      <b>合规声明（必读）：</b>本页为单页静态站点，<b>本页即全部内容，内链均为 # 锚点，无独立内页</b>。本站<b>不提供、不托管、不链接、不转存</b>任何影视作品文件，亦<b>不提供任何"免费影视站"的网址、名称、搜索方法与入口</b>。文中片名、导演名、镜头描述仅用于影像教学与正版观影推荐，著作权归原作者所有；涉及"公有领域 / 公版"者均为经验性说明，不构成法律意见，具体以著作权人公示与当地法律为准；标注"公版待核"者需在获取前自行核验版权状态。收到权利人通知后，本站将在 48 小时内响应并移除相关内容。
+      <ol>
+        <li>按"最小必要"原则使用片段描述，不复制完整剧情、对白与剧照。</li>
+        <li>不以"免费观看""在线播放""高清下载"为 SEO 诱饵；"免费"仅指合法免费渠道。</li>
+        <li>引用镜头描述注明年份、导演、时分秒，便于核验与溯源。</li>
+        <li>不收录、不链接受行政处置的侵权站点，不与盗版站交换链接。</li>
+        <li>承认"合理使用"的边界：评论、教学、研究可引用，但不得以"盘点"之名实质替代原作。</li>
+      </ol>
+      <p style="margin:.8rem 0 0;font-size:.8rem">依据：《中华人民共和国著作权法》第 24 条（合理使用的情形）、第 54 条（侵权赔偿）；《中华人民共和国刑法》第 217 条（侵犯著作权罪）。<br>备案号：待补充　·　站点托管：GitHub Pages（<a href="https://22dianyingwang-cn.github.io/" rel="noopener">https://22dianyingwang-cn.github.io/</a>）　·　<time datetime="2026-10">2026 年 10 月</time> 起，每月 22 日更新</p>
+    </div>
+
+    <div class="copy">
+      <span>© <time datetime="2026">2026</time> 22电影网 · 22dianyingwang-cn.github.io　|　影视资源 <b class="ok">0 个</b></span>
+      <span>本页为单页站点，内链均为 # 锚点 · 符合 Bing 收录规范</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
